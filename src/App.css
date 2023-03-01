@@ -1,0 +1,310 @@
+a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+}
+
+body {
+  margin: 20px 0;
+  font-family: 'Karla', sans-serif;
+}
+
+button {
+  color: #333333;
+  background-color: #f4ce14;
+  border-style: none;
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+form button{
+  width: auto;
+}
+
+
+
+header h1 {
+  color: #f4ce14;
+  font-family: 'Markazi Text', serif;
+  font-weight: 500;
+  font-size: 40px;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Markazi Text', serif;
+  font-weight: 500;
+  font-size: 35px;
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Markazi Text', serif;
+  font-weight: 500;
+  font-size: 25px;
+  margin: 0;
+}
+
+header {
+  background-color: #495e57;
+  padding: 20px 200px;
+  color: #edefee;
+  display: grid;
+  grid-template-areas: "a b";
+  grid-template-columns: 2fr 1fr;
+  height: 250px;
+}
+
+header .leftDiv {
+  grid-area: a;
+  padding-right: 400px;
+}
+
+header .rightDiv {
+  grid-area: b;
+  text-align: left;
+}
+
+li {
+  list-style: none;
+  text-align: left;
+}
+
+
+main .leftDiv {
+  grid-area: a;
+}
+
+main .rightDiv {
+  grid-area: b;
+}
+
+nav {
+  padding: 0 200px;
+}
+
+
+nav ul {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  padding: 0;
+}
+
+.about {
+  padding: 80px 200px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "n q"
+    "o q"
+    "p q";
+}
+
+.aboutHeading {
+  grid-area: n;
+  font-family: 'Markazi Text', serif;
+  font-weight: 500;
+  font-size: 40px;
+  margin: 0;
+}
+
+.aboutSubHeading {
+  grid-area: o;
+}
+
+.aboutText {
+  grid-area: p;
+}
+
+.imageB{
+  position: relative;
+  top: 50px;
+  left:50px;
+}
+
+.imageA{
+  position: relative;
+  bottom: 50px;
+  left: 10px;
+}
+.aboutImages {
+  grid-area: q;
+}
+
+.card {
+  display: grid;
+  background-color: #edefee;
+  grid-auto-flow: row;
+  border-radius: 10px;
+  height: 430px;
+  grid-template-rows: 190px 240px;
+  grid-template-areas:
+    "d"
+    "e";
+
+}
+
+.card img {
+  grid-area: d;
+}
+
+.cardBody {
+  grid-area: e;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 20px 140px 20px;
+  grid-template-areas:
+    "f g"
+    "h h"
+    "i i";
+}
+
+.cards {
+  display: grid;
+  grid-area: c;
+  grid-auto-flow: column;
+  margin: 80px 0;
+  gap: 70px;
+}
+
+.confirmedBooking{
+  padding: 80px 200px;
+  color: green;
+}
+
+
+.description {
+  grid-area: h;
+  margin-top: 20px;
+  color: #495e57;
+  font-size: 15px;
+}
+
+.headerImage {
+  border-radius: 10px;
+  position: relative;
+  top: 50px;
+}
+
+.order {
+  grid-area: i;
+
+}
+
+
+
+.price {
+  grid-area: g;
+  justify-content: right;
+  margin: 0;
+  align-items: center;
+  display: flex;
+  color: #ee9972;
+}
+
+.section1 {
+  padding: 80px 200px;
+  display: grid;
+  grid-template-areas: "a b"
+    "c c";
+  grid-template-columns: 2fr 1fr;
+}
+
+.testimonial {
+  height: 200px;
+  padding: 10px;
+  background-color: white;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "j j"
+    "k l"
+    "m m";
+}
+
+.testimonials {
+  padding: 80px 200px;
+  background-color: #edefee;
+  padding: 50px 200px;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 30px;
+  justify-content: center;
+}
+
+.testimonials .body {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2%;
+  width: 949px;
+}
+
+.testimonials .heading {
+  display: block;
+  text-align: center;
+}
+
+.testimonial img {
+  grid-area: k;
+}
+
+.testimonial .name {
+  margin-left: 20px;
+  grid-area: l;
+
+}
+
+
+.testimonial .rating {
+  grid-area: j;
+}
+
+
+.testimonial .review {
+  grid-area: m;
+}
+
+
+.title {
+  grid-area: f;
+  justify-content: left;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+footer{
+  padding: 80px 200px;
+  background-color: #edefee;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+footer h5{
+  margin: 0;
+}
+
+footer a{
+  font-size: 12px;
+}
+
+form{
+  display: grid; 
+  max-width: 200px; 
+  gap: 20px;
+  
+}
+
+input, select{ 
+  font-family: 'Karla', sans-serif;
+}
+
+.bookingPage{
+  padding: 40px 200px;
+}
